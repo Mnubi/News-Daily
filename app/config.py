@@ -4,6 +4,8 @@ class Config:
     '''
     pass
 
+    NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?apiKey={}'
+    NEWS_API_ARTICLES_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 
 
 class ProdConfig(Config):
@@ -25,3 +27,9 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
+class Config:
+    '''
+    General configuration parent class
+    '''
+    NEWS_API_ARTICLES_BASE_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'

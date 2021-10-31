@@ -3,12 +3,30 @@
     <head>
         <meta charset="utf-8">
         {% if title %}
-        <title> {{ title }}</title>
+        <title> {{ name }}</title>
         {% else %}
-        <title> Welcome to the best Movie Review website </title>
+        <title> Welcome to Daily News where you get updated with current affairs </title>
         {% endif %}
     </head>
     <body>
+        <ul>
+          {% for source in sources %}
+          <h4><a href="/article/{{source.id}}">
+            <p class="card-text">{{source.id}}</p>
+        </a></h4>
+        <p>{{source.description}}</p>
+  
+          {% endfor %}
+  
+      </ul>
 
-    </body>
+      <!-- Popular movie section 
+      <h3> Popular Movies</h3>
+      <ul>
+         {% for business_source in sources %}
+             <li>{{ business_sources.title}}</li>
+         {% endfor %}
+     </ul> -->
+
+      </body>
 </html>
