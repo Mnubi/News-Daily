@@ -1,3 +1,5 @@
+{% import 'macros.html' as macro%}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,14 +12,13 @@
     </head>
     <body>
         <h3> Popolar News sites around the globe</h3>
+        
         <ul>
-          {% for business_source in business_sources %}
-          <h4><a href="{{business_source.url}}">
-            <p class="card-text">{{business_source.id}}</p>
-        </a></h4>
-        <p>{{business_source.description}}</p>
-  
-          {% endfor %}
+            {{ macro.displaySourceList(business_sources.id)}}
+        </ul>
+        
+       
+        {% endfor %}
 
         
       <h3> Entertainment News </h3>
@@ -26,14 +27,6 @@
              <li>{{ entertainment_source.id}}</li>
          {% endfor %}
      </ul>
-     <!-- Now showing movie -->
-     <!-- <h3>Top Highlights</h3>
-      <ul>
-         {% for now_showing_movie in now_showing %}
-             <li>{{ general_sources.title}}</li>
-         {% endfor %}
-     </ul> --> -->
-
 
       </body>
 </html>
