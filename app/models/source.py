@@ -6,5 +6,5 @@ class Source:
         self.id = id
         self.name = name
         self.description = description
-        self.url = "https://abcnews.go.com" + url
+        self.url = url
         self.category= category

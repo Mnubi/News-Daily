@@ -3,31 +3,37 @@
     <head>
         <meta charset="utf-8">
         {% if title %}
-        <title> {{ name }}</title>
+        <title> {{ title }}</title>
         {% else %}
         <title> Welcome to Daily News where you get updated with current affairs </title>
         {% endif %}
     </head>
     <body>
-      <p>dghfgh yghgiugliu</p>
+        <h3> Popolar News sites around the globe</h3>
         <ul>
-          {% for source in sources %}
-          <h4><a href="/article/{{source.id}}">
-            <p class="card-text">{{source.id}}</p>
+          {% for business_source in business_sources %}
+          <h4><a href="{{business_source.url}}">
+            <p class="card-text">{{business_source.id}}</p>
         </a></h4>
-        <p>{{source.description}}</p>
+        <p>{{business_source.description}}</p>
   
           {% endfor %}
-  
-      </ul>
 
-      Popular movie section 
-      <h3> Popular Movies</h3>
+        
+      <h3> Entertainment News </h3>
       <ul>
-         {% for business_source in sources %}
-             <li>{{ business_sources.title}}</li>
+         {% for entertainment_source in entertainment %}
+             <li>{{ entertainment_source.id}}</li>
          {% endfor %}
      </ul>
+     <!-- Now showing movie -->
+     <!-- <h3>Top Highlights</h3>
+      <ul>
+         {% for now_showing_movie in now_showing %}
+             <li>{{ general_sources.title}}</li>
+         {% endfor %}
+     </ul> --> -->
+
 
       </body>
 </html>

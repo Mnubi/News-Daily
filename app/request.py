@@ -25,9 +25,11 @@ def get_sources():
     '''
     Function that gets the json response to url request
     '''
-    get_source_url= base_url.format(api_key)
+    # get_movies_url = base_url.format(category,api_key)              #new
+    get_sources_url= base_url.format(api_key)
     # print(get_source_url)
-    with urllib.request.urlopen(get_source_url) as url:
+
+    with urllib.request.urlopen(get_sources_url) as url:
         get_sources_data = url.read()
         get_sources_response = json.loads(get_sources_data)
 
