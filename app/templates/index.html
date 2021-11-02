@@ -1,16 +1,9 @@
+{% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to Daily News where you get updated with current affairs </title>
-        {% endif %}
-    </head>
-    <body>
+
+{% block content %}
+
         <h3> Popolar News sites around the globe</h3>
         
         <ul>
@@ -19,5 +12,5 @@
         </ul>
       
 
-      </body>
-</html>
+
+{% endblock%}
