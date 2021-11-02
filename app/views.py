@@ -2,17 +2,6 @@ from flask import render_template
 from app import app
 from .request import get_sources
 
-# # Views
-# @app.route('/')
-# def index():
-
-#     '''
-#     View root page function that returns the index page and its data
-#     '''
-#     # message = 'Hello World'
-#     sports source=get_sources()
-#     title = 'Home - Welcome to The Best News Articles Preview Website'
-#     return render_template('index.html',sources=source)
 
 @app.route('/')
 def index():

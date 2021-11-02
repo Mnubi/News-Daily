@@ -1,7 +1,7 @@
 {% macro displaySourceList(source_list) %}
 
     {% for source in source_list %}
-    <a href="{{business_source.url}}">{{business_sources.id}}</a>
+        <a href="{{source.url}}">{{source.id}}</a>
         <li>{{ source.name}}</li>
         <li>{{ source.description}}</li>
 

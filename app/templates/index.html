@@ -14,19 +14,10 @@
         <h3> Popolar News sites around the globe</h3>
         
         <ul>
-            {{ macro.displaySourceList(business_sources.id)}}
+            {{ macro.displaySourceList(business_sources)}}
+            
         </ul>
-        
-       
-        {% endfor %}
-
-        
-      <h3> Entertainment News </h3>
-      <ul>
-         {% for entertainment_source in entertainment %}
-             <li>{{ entertainment_source.id}}</li>
-         {% endfor %}
-     </ul>
+      
 
       </body>
 </html>
