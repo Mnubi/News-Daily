@@ -1,9 +1,10 @@
 from flask import render_template
-from app import app
-from .request import get_sources
+from . import main
+from ..request import get_sources
 
 
-@app.route('/')
+
+@main.route('/')
 def index():
 
     '''
@@ -17,7 +18,7 @@ def index():
     title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('index.html',business_sources = business_source)
 
-@app.route('/articles/<int:article_id>')
+@main.route('/articles/<int:article_id>')
 def articles(article_id):
 
     '''
