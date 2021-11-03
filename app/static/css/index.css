@@ -1,0 +1,34 @@
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet"> */
+
+body{
+    background-color: #8fd9fc;
+}
+
+.navbar{
+    color: #8fd9fc;
+    font-size: 15px;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+h3{
+    text-align: center;
+    font-weight: 400;
+}
+
+#pad{
+    background-color: mediumseagreen;
+}
+
+#head{
+    background-color: rgb(91, 91, 224);
+    color: white;
+    padding: 25px;
+    margin-top: 0;
+}
